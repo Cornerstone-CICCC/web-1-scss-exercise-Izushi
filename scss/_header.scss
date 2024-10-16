@@ -1,0 +1,27 @@
+// _header.scss
+@import 'variables';
+@import 'mixins';
+header {
+    background-color: $primary-color;
+    color: white;
+    padding: 20px;
+    h1 {
+        margin: 0;
+    }
+    nav {
+        ul {
+            @include flex-center;
+            list-style: none;
+            padding: 0;
+            li {
+                @include box-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
+                margin: 0 10px;
+                font-size: 30px;
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
